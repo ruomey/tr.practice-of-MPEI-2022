@@ -2,23 +2,33 @@
 #include "plant.h"
 #include <vector>
 #include <math.h>
+#include <chrono>
+#include <thread>
+using namespace std::chrono;
+using namespace std::this_thread;
 
-void input (size_t &sensor,size_t &number_of_surveys,size_t &time_interval,size_t &number_of_intervals ){
-    sensor = 0, number_of_surveys = 0, time_interval = 0, number_of_intervals = 0;
+void input (size_t &sensor,size_t &count_surveys,size_t &time_interval,size_t &count_intervals ){
+    sensor = 0, count_surveys = 0, time_interval = 0, count_intervals = 0;
     std::cout << "Enter the sensor number :" << std::endl;
     std::cin >> sensor;
     std::cout << "Enter the number of surveys :" << std::endl;
-    std::cin >> number_of_surveys;
+    std::cin >> count_surveys;
     std::cout << "Enter the time_interval :" << std::endl;
     std::cin >> time_interval;
     std::cout << "Enter the number of intervals :"<< std::endl;
-    std::cin >> number_of_intervals;
+    std::cin >> count_intervals;
     return;
 }
 
 int main (){
-    size_t sensor, number_of_surveys,time_interval, number_of_intervals;
-    input(sensor, number_of_surveys, time_interval, number_of_intervals);
-    std::cout << sensor << number_of_surveys << time_interval << number_of_intervals;
+    Plant plant;
+    plant_init(plant);
+    size_t sensor, count_surveys, time_interval, count_intervals;
+    input(sensor, count_surveys, time_interval, count_intervals);
+    std::vector<double>sensor_values(count_surveys);
+    for (size_t i = 0; i < count_surveys; i++){
+        sensor_values[i] = plant_measure(sensor,plant);
+        sleep_for(seconds(time_interval));
+    }
     return 0;
 }
