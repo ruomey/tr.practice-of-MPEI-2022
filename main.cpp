@@ -21,6 +21,7 @@ void input (size_t &sensor,size_t &count_surveys,size_t &time_interval,size_t &c
 }
 
 int main (){
+    //ввод данных
     Plant plant;
     plant_init(plant);
     size_t sensor, count_surveys, time_interval, count_intervals;
@@ -30,5 +31,20 @@ int main (){
         sensor_values[i] = plant_measure(sensor,plant);
         sleep_for(seconds(time_interval));
     }
+    std::cout << "Sensor values: " << std::endl;
+    for (size_t i = 0; i < count_surveys; i++){
+        std::cout << "[" << i + 1 << "]: " << sensor_values[i] << "   ";
+        if ((i + 1) % 5 == 0 && i != 0) std::cout << std::endl;
+    }
+    //расчет
+    //1. найдем минимум и максимум
+    double min = sensor_values[0];
+    double max = sensor_values[0];
+    for (double value : sensor_values){
+        if (min > value) min = value;
+        if (max < value) max = value;
+    }
+
+
     return 0;
 }
