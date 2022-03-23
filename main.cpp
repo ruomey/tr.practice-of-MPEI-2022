@@ -68,10 +68,9 @@ int main (){
     for(size_t i = 0; i < count_intervals; i ++){
         relative_numbers[i] = (static_cast<double>(hit_rates[i]) / count_surveys);
     }
-     std::cout << hit_rates[0];
-    //for(size_t i = 0; i < count_intervals; i ++){
-      // std::cout << min + lenght_interval * i << "  " << hit_rates[i] << "  " << relative_numbers[i]<< std::endl << std::endl ;
-    //}
+    for(size_t i = 0; i < count_intervals; i ++){
+       std::cout << min + i * lenght_interval << std::endl <<"     "<< hit_rates[i] << "  " << relative_numbers[i]<< std::endl ;
+    }
     std::cout << max;
     return 0;
 }
