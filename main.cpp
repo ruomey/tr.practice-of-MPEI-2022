@@ -28,7 +28,7 @@ void hit_rate(std::vector<double>values, size_t count_surveys, std::vector<size_
                 auto hi = min + ((count + 1)* lenght_interval);
                 if ( (values[i] >= lo) && (values[i] < hi)) {
                     found = true;
-                    hit_rates[i]++;
+                    hit_rates[count]++;
                 }
             }
             if(!found) hit_rates[count_intervals - 1]++;
@@ -63,6 +63,15 @@ int main (){
     double lenght_interval = 0;
     std::vector<size_t>hit_rates(count_intervals,0);
     lenght_interval = (max - min)/count_intervals;
-    hit_rate(sensor_values,count_surveys, hit_rates, count_intervals, lenght_interval,min);
+    hit_rate(sensor_values,count_surveys, hit_rates, count_intervals, lenght_interval, min);
+    std::vector<double>relative_numbers(count_surveys);
+    for(size_t i = 0; i < count_intervals; i ++){
+        relative_numbers[i] = (static_cast<double>(hit_rates[i]) / count_surveys);
+    }
+     std::cout << hit_rates[0];
+    //for(size_t i = 0; i < count_intervals; i ++){
+      // std::cout << min + lenght_interval * i << "  " << hit_rates[i] << "  " << relative_numbers[i]<< std::endl << std::endl ;
+    //}
+    std::cout << max;
     return 0;
 }
