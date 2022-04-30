@@ -1,0 +1,86 @@
+# depslib dependency file v1.0
+1651352214 source:d:\programming in mpei\practic2022\main.cpp
+	<iostream>
+	<vector>
+	<math.h>
+	<chrono>
+	<thread>
+	<fstream>
+	<string>
+	<windows.h>
+	<shellapi.h>
+	<iomanip>
+	"plant.h"
+	"hist.h"
+
+1648028159 d:\programming in mpei\practic2022\plant.h
+
+1648028159 source:d:\programming in mpei\practic2022\plant.c
+	<math.h>
+	<time.h>
+	<stdio.h>
+	<stdlib.h>
+	"plant.h"
+
+1648037743 d:\programming in mpei\practic2022\dislin\discpp.h
+
+1648191965 source:d:\programming in mpei\practic2022\practice.cpp
+	<discpp.h>
+	<cmath>
+	<vector>
+
+1650387260 source:d:\programming in mpei\practic2022\histogram.cpp
+	<iostream>
+	"plant.h"
+	<vector>
+	<math.h>
+	<fstream>
+	<string>
+	"histogram.h"
+
+1650387235 d:\programming in mpei\practic2022\histogram.h
+	<iostream>
+	"plant.h"
+	<vector>
+	<math.h>
+	<fstream>
+	<string>
+
+1650387473 source:d:\programming in mpei\practic2022\svg_histogram.cpp
+	<iostream>
+	"plant.h"
+	"histogram.h"
+	"svg_histogram.h"
+	<vector>
+	<math.h>
+	<fstream>
+	<string>
+
+1650387663 d:\programming in mpei\practic2022\svg_histogram.h
+	<iostream>
+	"plant.h"
+	"histogram.h"
+	"svg_histogram.h"
+	<vector>
+	<math.h>
+	<fstream>
+	<string>
+
+1651352214 source:d:\programming in mpei\practic2022\hist.cpp
+	<iostream>
+	<vector>
+	<math.h>
+	<chrono>
+	<thread>
+	<fstream>
+	<string>
+	"hist.h"
+	"plant.h"
+
+1651352904 d:\programming in mpei\practic2022\hist.h
+	<iostream>
+	<vector>
+	"plant.h"
+
+1648037743 d:\programming in mpei\practic2022\discpp.h
+
