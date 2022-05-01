@@ -7,10 +7,12 @@
 #include "plant.h"
 #include "graph.h"
 #include "discpp.h"
-
+#include "hist.h"
 using std::vector;
 
 void graph(vector<float>ox ,vector<float>oy){
+    float max,min;
+    find_minmax_float(oy,max,min);
     // Инициализация ОУ.
     Plant plant;
     plant_init(plant);
@@ -26,7 +28,8 @@ void graph(vector<float>ox ,vector<float>oy){
 
     // Инициализирует библиотеку, должно быть раньше других вызовов отрисовки.
     g.disini();
-    g.axslen (ox.size()*50, 1200);
+    g.axspos (450, 1800);
+    g.axslen (1920,1200);
     // Задает подписи осей.
     g.name("Measurement no.", "x");
     g.name("Value", "y");
@@ -39,7 +42,7 @@ void graph(vector<float>ox ,vector<float>oy){
     g.ticks(10, "y");
 
     // Задает заголовок графика.
-    g.titlin("Reserch hit rates in channel", 1);
+    g.titlin("Reserch hit rates in channel", 3);
 
     // Определяет цвет как смесь красного, зеленого и синего от 0 до 1 (RGB).
     // Здесь: все компоненты равны и близки к 1, т. е. цвет светло-серый.
@@ -55,9 +58,9 @@ void graph(vector<float>ox ,vector<float>oy){
         // Наименишее значение на оси абсцисс и следующее за ним.
         ox[0], ox[1] * (ox.size()/10),
         // Область значений по оси ординат (Y).
-        oy[0], 1.0,
+        0, 1.0,
         // Наименьшее значение на оси ординат и следующее за ним.
-        oy[0],oy[1]* (oy.size()*5));
+        0, 0.2);
 
     // Задает светло-сервый цвет для следующего вызова.
     g.setrgb(0.7, 0.7, 0.7);

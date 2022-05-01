@@ -66,18 +66,14 @@
 	<fstream>
 	<string>
 
-1651352214 source:d:\programming in mpei\practic2022\hist.cpp
+1651430346 source:d:\programming in mpei\practic2022\hist.cpp
 	<iostream>
 	<vector>
 	<math.h>
-	<chrono>
-	<thread>
-	<fstream>
-	<string>
 	"hist.h"
 	"plant.h"
 
-1651352904 d:\programming in mpei\practic2022\hist.h
+1651432645 d:\programming in mpei\practic2022\hist.h
 	<iostream>
 	<vector>
 	"plant.h"

@@ -8,19 +8,19 @@
 
 1648028159 d:\programming in mpei\practic2022\plant.h
 
-1651352954 source:d:\programming in mpei\practic2022\hist.cpp
+1651434216 source:d:\programming in mpei\practic2022\hist.cpp
 	<iostream>
 	<vector>
 	<math.h>
 	"hist.h"
 	"plant.h"
 
-1651352904 d:\programming in mpei\practic2022\hist.h
+1651432645 d:\programming in mpei\practic2022\hist.h
 	<iostream>
 	<vector>
 	"plant.h"
 
-1651359828 source:d:\programming in mpei\practic2022\research.cpp
+1651433439 source:d:\programming in mpei\practic2022\research.cpp
 	<iostream>
 	<iomanip>
 	<vector>
@@ -49,11 +49,12 @@
 
 1648037743 d:\programming in mpei\practic2022\discpp.h
 
-1651360548 source:d:\programming in mpei\practic2022\graph.cpp
+1651433850 source:d:\programming in mpei\practic2022\graph.cpp
 	<iostream>
 	<cmath>
 	<vector>
 	"plant.h"
 	"graph.h"
 	"discpp.h"
+	"hist.h"
 
