@@ -13,7 +13,13 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="../../practic2022" />
 				</Compiler>
+				<Linker>
+					<Add library="../discpp.a" />
+					<Add library="gdi32" />
+					<Add library="opengl32" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/research" prefix_auto="1" extension_auto="1" />
@@ -31,6 +37,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="../graph.cpp" />
+		<Unit filename="../graph.h" />
 		<Unit filename="../hist.cpp" />
 		<Unit filename="../hist.h" />
 		<Unit filename="../plant.c">

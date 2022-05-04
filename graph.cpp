@@ -7,7 +7,7 @@
 #include "plant.h"
 #include "graph.h"
 #include "discpp.h"
-#include "hist.h"
+#include "research_function.h"
 using std::vector;
 
 void graph(vector<float>ox ,vector<float>oy){

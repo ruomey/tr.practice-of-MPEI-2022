@@ -8,19 +8,19 @@
 
 1648028159 d:\programming in mpei\practic2022\plant.h
 
-1651434216 source:d:\programming in mpei\practic2022\hist.cpp
+1651628167 source:d:\programming in mpei\practic2022\hist.cpp
 	<iostream>
 	<vector>
 	<math.h>
 	"hist.h"
 	"plant.h"
 
-1651432645 d:\programming in mpei\practic2022\hist.h
+1651628167 d:\programming in mpei\practic2022\hist.h
 	<iostream>
 	<vector>
 	"plant.h"
 
-1651433439 source:d:\programming in mpei\practic2022\research.cpp
+1651628385 source:d:\programming in mpei\practic2022\research.cpp
 	<iostream>
 	<iomanip>
 	<vector>
@@ -29,7 +29,8 @@
 	<thread>
 	<fstream>
 	<string>
-	"hist.h"
+	"research_function.h"
+	"input.h"
 	"plant.h"
 	"graph.h"
 
@@ -49,12 +50,39 @@
 
 1648037743 d:\programming in mpei\practic2022\discpp.h
 
-1651433850 source:d:\programming in mpei\practic2022\graph.cpp
+1651628407 source:d:\programming in mpei\practic2022\graph.cpp
 	<iostream>
 	<cmath>
 	<vector>
 	"plant.h"
 	"graph.h"
 	"discpp.h"
-	"hist.h"
+	"research_function.h"
+
+1651628385 source:d:\programming in mpei\practic2022\input.cpp
+	<iostream>
+	<vector>
+	<math.h>
+	"input.h"
+	"plant.h"
+
+1651628429 d:\programming in mpei\practic2022\input.h
+	<iostream>
+	<vector>
+	<math.h>
+	"plant.h"
+
+1651628585 d:\programming in mpei\practic2022\research_function.h
+	<iostream>
+	<vector>
+	<math.h>
+	"plant.h"
+
+1651628631 source:d:\programming in mpei\practic2022\research_function.cpp
+	<iostream>
+	<vector>
+	<math.h>
+	"research_function.h"
+	"plant.h"
+	"input.h"
 
