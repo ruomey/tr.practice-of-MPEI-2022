@@ -1,0 +1,78 @@
+# depslib dependency file v1.0
+1651630486 source:d:\programming in mpei\practic2022\graph.cpp
+	<iostream>
+	<cmath>
+	<vector>
+	"plant.h"
+	"graph.h"
+	"discpp.h"
+	"research_function.h"
+
+1648028159 d:\programming in mpei\practic2022\plant.h
+
+1651356001 d:\programming in mpei\practic2022\graph.h
+	<iostream>
+	"discpp.h"
+
+1648037743 d:\programming in mpei\practic2022\discpp.h
+
+1651630487 d:\programming in mpei\practic2022\research_function.h
+	<iostream>
+	<vector>
+	<math.h>
+	"plant.h"
+
+1651630486 source:d:\programming in mpei\practic2022\hist.cpp
+	<iostream>
+	<vector>
+	<math.h>
+	"hist.h"
+	"plant.h"
+
+1651630486 d:\programming in mpei\practic2022\hist.h
+	<iostream>
+	<vector>
+	"plant.h"
+
+1651660385 source:d:\programming in mpei\practic2022\input.cpp
+	<iostream>
+	<vector>
+	<math.h>
+	"input.h"
+	"plant.h"
+
+1651629907 d:\programming in mpei\practic2022\input.h
+	<iostream>
+	<vector>
+	<math.h>
+	"plant.h"
+
+1648028159 source:d:\programming in mpei\practic2022\plant.c
+	<math.h>
+	<time.h>
+	<stdio.h>
+	<stdlib.h>
+	"plant.h"
+
+1651630487 source:d:\programming in mpei\practic2022\research_function.cpp
+	<iostream>
+	<vector>
+	<math.h>
+	"research_function.h"
+	"plant.h"
+	"input.h"
+
+1651672020 source:d:\programming in mpei\practic2022\research.cpp
+	<iostream>
+	<iomanip>
+	<vector>
+	<math.h>
+	<chrono>
+	<thread>
+	<fstream>
+	<string>
+	"research_function.h"
+	"input.h"
+	"plant.h"
+	"graph.h"
+

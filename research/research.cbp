@@ -37,18 +37,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-<<<<<<< HEAD
-		<Unit filename="../discpp.h" />
 		<Unit filename="../graph.cpp" />
 		<Unit filename="../graph.h" />
 		<Unit filename="../input.cpp" />
 		<Unit filename="../input.h" />
-=======
-		<Unit filename="../graph.cpp" />
-		<Unit filename="../graph.h" />
-		<Unit filename="../hist.cpp" />
-		<Unit filename="../hist.h" />
->>>>>>> cbf2333
 		<Unit filename="../plant.c">
 			<Option compilerVar="CC" />
 		</Unit>

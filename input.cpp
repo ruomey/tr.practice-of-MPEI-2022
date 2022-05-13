@@ -7,11 +7,11 @@
 void input (int &sensor, int &count_surveys, double &time_interval, int &count_intervals){
     sensor = -1, count_surveys = -1, time_interval = -1, count_intervals = -1;
     int count_for_error = 0;
-    while(sensor == -1 && count_for_error < 10){
+    while(sensor == -1 && count_for_error < 10 ){
         std::cerr << "Enter the sensor number :";
         std::cin >> sensor;
-        if (sensor <= 0) {
-            std :: cout << "Enter correct sensor number(from 1 to 90)" << std::endl;
+        if (sensor <= 0 || sensor > 90 || (sensor >= 7 && sensor <=10)) {
+            std :: cout << "Enter correct sensor number(from 1 to 6 and from 11 to 90)" << std::endl;
             sensor = -1;
             if (count_for_error == 5) std::cout << "Warning: 5 tries left" << std::endl;
             if (count_for_error == 8) std::cout << "Warning: 1 tries left" << std::endl;
